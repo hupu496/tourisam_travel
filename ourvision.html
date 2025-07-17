@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    
+
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -59,9 +59,8 @@
             </div>
             <div class="col-lg-4 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a href="#"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
+                    <a href="register.html"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Register</small></a>
                     <a href="login.html"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>Login</small></a>
-                
                     <div class="dropdown">
                         <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i
                                     class="fa fa-home me-2"></i> My Dashboard</small></a>
@@ -70,28 +69,29 @@
                             <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Inbox</a>
                             <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Notifications</a>
                             <a href="#" class="dropdown-item"><i class="fas fa-cog me-2"></i> Account Settings</a>
-                            <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>                        
+                            <a href="#" class="dropdown-item"><i class="fas fa-power-off me-2"></i> Log Out</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>  
+    </div>
     <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-            <a href="" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>Travela</h1>
-                <!-- <img src="img/logo.png" alt="Logo"> -->
+           <a href="" class="navbar-brand d-flex align-items-center sticky-top.navbar-light navbar-nav nav-link">
+        <img src="img/Website_Logo.jpg" alt="Logo" class="logo-img me-2" style="border-radius: 100%; width:65px; height: 100px;">
+        <span class="logo-text" style="color:#fff; font-weight: 800;">HOLYLAND PILGRIMAGE TOURS (OPC)</span>
+    </a>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                     <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About us</a>
                     <a href="ourvision.html" class="nav-item nav-link">Our vision</a>
                     <a href="packages.html" class="nav-item nav-link">Our tour packages</a>
@@ -102,73 +102,209 @@
                              <a href="gallery.html" class="dropdown-item">Gallery</a>
                         </div>
                     </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact us</a>
                 </div>
                 <a href="" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Booking</a>
             </div>
         </nav>
-    <!-- Navbar & Hero End -->
-<section class="h-100 h-custom" style="background-color: #8fc4b7;">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-8 col-xl-6">
-        <div class="card rounded-3">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp"
-            class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
-            alt="Sample photo">
-          <div class="card-body p-4 p-md-5">
-            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
-
-            <form class="px-md-2">
-
-              <div data-mdb-input-init class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
-                <label class="form-label" for="form3Example1q">Name</label>
-              </div>
-
-              <div class="row">
-                <div class="col-md-6 mb-4">
-
-                  <div data-mdb-input-init class="form-outline datepicker">
-                    <input type="text" class="form-control" id="exampleDatepicker1" />
-                    <label for="exampleDatepicker1" class="form-label">Select a date</label>
-                  </div>
-
-                </div>
-                
-                <div class="col-md-6 mb-4"> 
-                    <div data-mdb-input-init class="form-outline datepicker">
-                    <label for="exampleDatepicker1" class="form-label">Gender</label>         
-                  <select data-mdb-select-init>
-                    <option value="2">Female</option>
-                    <option value="3">Male</option>
-                    <option value="4">Other</option>
-                  </select>
-
-                </div>
-              </div>
-
-              <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
-                <div class="col-md-6">
-
-                  <div data-mdb-input-init class="form-outline">
-                    <input type="text" id="form3Example1w" class="form-control" />
-                    <label class="form-label" for="form3Example1w">Registration code</label>
-                  </div>
-
-                </div>
-              </div>
-
-              <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-lg mb-1">Submit</button>
-
-            </form>
-
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
-<!-- Footer Start -->
+    <!-- Navbar & Hero End -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4">Our vision</h1>
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                    <li class="breadcrumb-item active text-white">About</li>
+                </ol>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="h-100"
+                        style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
+                        <img src="img/about-img.jpg" class="img-fluid w-100 h-100" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7"
+                    style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
+                    <h5 class="section-about-title pe-3">Our vision</h5>
+                    <h1 class="mb-4">Welcome to <span class="text-primary">Holy Land Pilgrimage Tours (OPC)</span></h1>
+                    <p class="mb-4">Initiative by Shri Ranjit Toppo, specializes in organizing pilgrimage tours to
+                        the Holy Land and Europe, focusing on significant Christian pilgrimage sites! </p>
+                    <p class="mb-4">Committed to providing enriching spiritual experiences, the company aims to expand
+                        its offerings to other countries and also include leisure trips, catering to a broader audience
+                        seeking both religious and recreational travel experiences.</p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>First Class Flights</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Handpicked Hotels</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>5 Star Accommodations</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Latest Model Vehicles</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>150 Premium City Tours
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>24/7 Service</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Travel Guide Start -->
+    <div class="container-fluid guide py-5">
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Travel Guide</h5>
+                <h1 class="mb-0">Meet Our Guide</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="guide-item">
+                        <div class="guide-img">
+                            <div class="guide-img-efects">
+                                <img src="img/guide-1.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            </div>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <div class="guide-title-inner">
+                                <h4 class="mt-3">Full Name</h4>
+                                <p class="mb-0">Designation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="guide-item">
+                        <div class="guide-img">
+                            <div class="guide-img-efects">
+                                <img src="img/guide-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            </div>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <div class="guide-title-inner">
+                                <h4 class="mt-3">Full Name</h4>
+                                <p class="mb-0">Designation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="guide-item">
+                        <div class="guide-img">
+                            <div class="guide-img-efects">
+                                <img src="img/guide-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            </div>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <div class="guide-title-inner">
+                                <h4 class="mt-3">Full Name</h4>
+                                <p class="mb-0">Designation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="guide-item">
+                        <div class="guide-img">
+                            <div class="guide-img-efects">
+                                <img src="img/guide-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                            </div>
+                            <div class="guide-icon rounded-pill p-2">
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle mx-1" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="guide-title text-center rounded-bottom p-4">
+                            <div class="guide-title-inner">
+                                <h4 class="mt-3">Full Name</h4>
+                                <p class="mb-0">Designation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Travel Guide End -->
+
+    <!-- Subscribe Start -->
+    <div class="container-fluid subscribe py-5">
+        <div class="container text-center py-5">
+            <div class="mx-auto text-center" style="max-width: 900px;">
+                <h5 class="subscribe-title px-3">Subscribe</h5>
+                <h1 class="text-white mb-4">Our Newsletter</h1>
+                <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam,
+                    architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium
+                    fugiat corrupti eum cum repellat a laborum quasi.
+                </p>
+                <div class="position-relative mx-auto">
+                    <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                        placeholder="Your email">
+                    <button type="button"
+                        class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Subscribe End -->
+
+    <!-- Footer Start -->
     <div class="container-fluid footer py-5">
         <div class="container py-5">
             <div class="row g-5">
@@ -272,12 +408,10 @@
                     <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                     <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                     <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
-                        href="https://themewagon.com">ThemeWagon</a>
+                    Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- Copyright End -->
 
