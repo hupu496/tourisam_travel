@@ -1,0 +1,92 @@
+public function create_officer_details(){
+			$data = $this->input->post();
+				
+			$upload_path = './assets/uploads/';	
+		    $allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
+		  if($_FILES['image']['name'] !=''){
+		  			
+			  $image = upload_file("image", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['image'] = $image['path'];
+			  }
+		  }
+		   if($_FILES['signature']['name'] !=''){
+			  $image = upload_file("signature", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['signature'] = $image['path'];
+			  }
+		  }
+		  if($_FILES['aadhar']['name'] !=''){
+			  $image = upload_file("aadhar", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['aadhar'] = $image['path'];
+			  }
+		  }
+		   if($_FILES['pan']['name'] !=''){
+			  $image = upload_file("pan", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['pan'] = $image['path'];
+			  }
+		  }
+		   if($_FILES['bank_account']['name'] !=''){
+			  $image = upload_file("bank_account", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['bank_account'] = $image['path'];
+			  }
+		  }
+		  
+		   if($_FILES['security_e_receipt']['name'] !=''){
+			  $image = upload_file("security_e_receipt", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['security_e_receipt'] = $image['path'];
+			  }
+		  }
+		  if($_FILES['processing_receipt']['name'] !=''){
+			  $image = upload_file("processing_receipt", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['processing_receipt'] = $image['path'];
+			  }
+		  }
+		   if($_FILES['training_receipt']['name'] !=''){
+			  $image = upload_file("training_receipt", $upload_path, $allowed_types, time());
+			  if ($image !='') {
+				  $data['training_receipt'] = $image['path'];
+			  }
+		  }
+		  $data['signup_id'] = $_SESSION['signupid'];
+		$run=$this->Website_model->officer_details_model($data);
+
+		if($run){
+			unset($_SESSION['signupid']);
+			$this->session->set_flashdata("web_msg","News Added Successfully!!");
+			redirect('website/office_login');
+		}else{
+			$this->session->set_flashdata("web_err_msg",$run);
+			redirect('website/econtractform');
+		}
+		
+	}
+
+	.................................model......................................
+
+	public function officer_details_model($data){
+		// echo PRE;
+		// print_r($data);die;
+		$table="officer_details";  
+		$data['added_on']=date('Y-m-d');
+		unset($data['department']);
+		unset($data['post']);
+		unset($data['state']);
+		unset($data['app_date']);
+		// unset($data['reg_no']);
+		unset($data['state_id']);
+		$status=$this->db->insert($table,$data);
+		// echo $str = $this->db->last_query();
+		// die;
+		if($status){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
