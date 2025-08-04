@@ -129,4 +129,5 @@
     }); 
 
 })(jQuery);
+// by default navbar
 

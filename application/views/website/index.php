@@ -9,7 +9,7 @@
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <img src="img/Jerusalem 2.png" class="img-fluid" alt="Image">
+                        <img src="<?php echo base_url('assets/img/Jerusalem 2.png'); ?>" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Europe_crousel.jpg" class="img-fluid" alt="Image">
+                        <img src="<?php echo base_url('assets/img/Europe_crousel.jpg'); ?>" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/carousel-1.jpg" class="img-fluid" alt="Image">
+                        <img src="<?php echo base_url('assets/img/carousel-1.jpg'); ?>" class="img-fluid" alt="Image">
                         <div class="carousel-caption">
                             <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Explore
@@ -86,7 +86,7 @@
                 <div class="col-lg-5">
                     <div class="h-100"
                         style="border: 50px solid; border-color: transparent #13357B transparent #13357B;">
-                        <img src="img/about-img.jpg" class="img-fluid w-100 h-100" alt="">
+                        <img src="<?php echo base_url('assets/img/about-img.jpg'); ?>" class="img-fluid w-100 h-100" alt="">
                     </div>
                 </div>
                 <div class="col-lg-7"
@@ -178,7 +178,7 @@
                                 <div class="row g-4">
                                     <div class="col-lg-6">
                                         <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="img/destination-1.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="<?php echo base_url('assets/img/destination-1.jpg');?>" alt="">
                                             <div class="destination-overlay p-4">
                                                 <a href="#"
                                                     class="btn btn-primary text-white rounded-pill border py-2 px-3">20
@@ -188,14 +188,14 @@
                                                         class="fa fa-arrow-right ms-2"></i></a>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/destination-1.jpg" data-lightbox="destination-1"><i
+                                                <a href="<?php echo base_url('assets/img/destination-1.jpg');?>" data-lightbox="destination-1"><i
                                                         class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="destination-img">
-                                            <img class="img-fluid rounded w-100" src="img/destination-2.jpg" alt="">
+                                            <img class="img-fluid rounded w-100" src="<?php echo base_url('assets/img/destination-2.jpg');?>" alt="">
                                             <div class="destination-overlay p-4">
                                                 <a href="#"
                                                     class="btn btn-primary text-white rounded-pill border py-2 px-3">20
@@ -205,7 +205,7 @@
                                                         class="fa fa-arrow-right ms-2"></i></a>
                                             </div>
                                             <div class="search-icon">
-                                                <a href="img/destination-2.jpg" data-lightbox="destination-2"><i
+                                                <a href="<?php echo base_url('assets/img/destination-2.jpg');?>" data-lightbox="destination-2"><i
                                                         class="fa fa-plus-square fa-1x btn btn-light btn-lg-square text-primary"></i></a>
                                             </div>
                                         </div>
@@ -524,7 +524,7 @@
                         <div class="row g-4">
                             <div class="col-md-6 col-lg-4">
                                 <div class="national-item">
-                                    <img src="img/explore-tour-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="<?php echo base_url('assets/img/explore-tour-1.jpg'); ?>" class="img-fluid w-100 rounded" alt="Image">
                                     <div class="national-content">
                                         <div class="national-info">
                                             <h5 class="text-white text-uppercase mb-2">Weekend Tour</h5>
@@ -539,7 +539,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="national-item">
-                                    <img src="img/explore-tour-2.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="<?php echo base_url('assets/img/explore-tour-2.jpg');?>" class="img-fluid w-100 rounded" alt="Image">
                                     <div class="national-content">
                                         <div class="national-info">
                                             <h5 class="text-white text-uppercase mb-2">Holiday Tour</h5>
@@ -554,7 +554,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <div class="national-item">
-                                    <img src="img/explore-tour-3.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                    <img src="<?php echo base_url('assets/img/explore-tour-3.jpg'); ?>" class="img-fluid w-100 rounded" alt="Image">
                                     <div class="national-content">
                                         <div class="national-info">
                                             <h5 class="text-white text-uppercase mb-2">Road Trip</h5>
@@ -713,7 +713,7 @@
             <div class="packages-carousel owl-carousel">
                 <div class="packages-item">
                     <div class="packages-img">
-                        <img src="img/packages-4.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <img src="<?php echo base_url('assets/img/packages-4.jpg');?>" class="img-fluid w-100 rounded-top" alt="Image">
                         <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
                             style="width: 100%; bottom: 0; left: 0; z-index: 5;">
                             <small class="flex-fill text-center border-end py-2"><i
@@ -750,7 +750,7 @@
                 </div>
                 <div class="packages-item">
                     <div class="packages-img">
-                        <img src="img/packages-2.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <img src="<?php echo base_url('assets/img/packages-2.jpg');?>" class="img-fluid w-100 rounded-top" alt="Image">
                         <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
                             style="width: 100%; bottom: 0; left: 0; z-index: 5;">
                             <small class="flex-fill text-center border-end py-2"><i
@@ -787,7 +787,7 @@
                 </div>
                 <div class="packages-item">
                     <div class="packages-img">
-                        <img src="img/packages-3.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                        <img src="<?php echo base_url('assets/img/packages-3.jpg');?>" class="img-fluid w-100 rounded-top" alt="Image">
                         <div class="packages-info d-flex border border-start-0 border-end-0 position-absolute"
                             style="width: 100%; bottom: 0; left: 0; z-index: 5;">
                             <small class="flex-fill text-center border-end py-2"><i
@@ -911,7 +911,7 @@
                     <div class="row g-2">
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-2">
                             <div class="gallery-item h-100">
-                                <img src="img/gallery-1.jpg" class="img-fluid w-100 h-100 rounded" alt="Image">
+                                <img src="<?php echo base_url('assets/img/gallery-1.jpg'); ?>" class="img-fluid w-100 h-100 rounded" alt="Image">
                                 <div class="gallery-content">
                                     <div class="gallery-info">
                                         <h5 class="text-white text-uppercase mb-2">World Tour</h5>
@@ -920,7 +920,7 @@
                                     </div>
                                 </div>
                                 <div class="gallery-plus-icon">
-                                    <a href="img/gallery-1.jpg" data-lightbox="gallery-1" class="my-auto"><i
+                                    <a href="<?php echo base_url('assets/img/gallery-1.jpg'); ?>" data-lightbox="gallery-1" class="my-auto"><i
                                             class="fas fa-plus fa-2x text-white"></i></a>
                                 </div>
                             </div>
@@ -1440,7 +1440,7 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-1.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top" src="<?php echo base_url('assets/img/blog-1.jpg'); ?>" alt="Image">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
@@ -1467,7 +1467,7 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-2.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top" src="<?php echo base_url('assets/img/blog-2.jpg'); ?>" alt="Image">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
@@ -1494,7 +1494,7 @@
                     <div class="blog-item">
                         <div class="blog-img">
                             <div class="blog-img-inner">
-                                <img class="img-fluid w-100 rounded-top" src="img/blog-3.jpg" alt="Image">
+                                <img class="img-fluid w-100 rounded-top" src="<?php echo base_url('assets/img/blog-3.jpg'); ?>" alt="Image">
                                 <div class="blog-icon">
                                     <a href="#" class="my-auto"><i class="fas fa-link fa-2x text-white"></i></a>
                                 </div>
@@ -1520,26 +1520,15 @@
             </div>
         </div>
     </div>
-    <!-- Blog End -->
-    <!-- Subscribe Start -->
-    <!-- <div class="container-fluid subscribe py-5">
-        <div class="container text-center py-5">
-            <div class="mx-auto text-center" style="max-width: 900px;">
-                <h5 class="subscribe-title px-3">Subscribe</h5>
-                <h1 class="text-white mb-4">Our Newsletter</h1>
-                <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tempore nam,
-                    architecto doloremque velit explicabo? Voluptate sunt eveniet fuga eligendi! Expedita laudantium
-                    fugiat corrupti eum cum repellat a laborum quasi.
-                </p>
-                <div class="position-relative mx-auto">
-                    <input class="form-control border-primary rounded-pill w-100 py-3 ps-4 pe-5" type="text"
-                        placeholder="Your email">
-                    <button type="button"
-                        class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 px-4 mt-2 me-2">Subscribe</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Subscribe End -->
-    <!-- Footer Start -->
-   
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+       <?php if(isset($this->session->web_msg)){ ?>
+        <script type="text/javascript">
+           swal("Good job!", "You clicked the button!", "success");
+           swal('Good job!','<?php echo $this->session->web_msg;?>','success');
+        </script>
+           <?php }else if(isset($this->session->web_err_msg)){ ?>
+        <script type="text/javascript">
+           // swal("Good job!", "You clicked the button!", "success");
+           swal('Opps!','<?php echo $this->session->web_err_msg;?>','error');
+        </script>
+    <?php }?>

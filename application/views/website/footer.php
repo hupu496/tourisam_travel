@@ -26,11 +26,11 @@
                 <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="footer-item d-flex flex-column">
                         <h4 class="mb-4 text-white">Company</h4>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> About us</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Our vision</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i>Our tour packages</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Up coming tours</a>
-                        <a href=""><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        <a href="<?php echo base_url('/about_us'); ?>"><i class="fas fa-angle-right me-2"></i> About us</a>
+                        <a href="<?php echo base_url('/our_vision'); ?>"><i class="fas fa-angle-right me-2"></i> Our vision</a>
+                        <a href="<?php echo base_url('/our_packages'); ?>"><i class="fas fa-angle-right me-2"></i>Our tour packages</a>
+                        <a href="<?php echo base_url('/up_coming_tour'); ?>"><i class="fas fa-angle-right me-2"></i> Up coming tours</a>
+                        <a href="<?php echo base_url('/contact_us'); ?>"><i class="fas fa-angle-right me-2"></i> Contact us</a>
                     </div>
                 </div>
                 <!-- <div class="col-md-6 col-lg-6 col-xl-3">
@@ -96,7 +96,7 @@
             <div class="row g-4 align-items-center">
                 <div class="col-md-6 text-center text-md-end mb-md-0">
                     <i class="fas fa-copyright me-2"></i><a class="text-white"
-                        href="https://hupu496.github.io/techsparrow/">Your Site Name</a>, All right
+                        href="https://hupu496.github.io/techsparrow/">HOLYLAND PIGRIMAGE TOURS</a>, All right
                     reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-start">

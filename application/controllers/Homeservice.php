@@ -69,10 +69,53 @@ class Homeservice extends CI_Controller {
 	{
 		$data['title']="About Us";
 		$this->load->view('website/top-section',$data);
-      
 		$this->load->view('website/about');
         $this->load->view('website/footer');
 	}
+	public function registeruser(){
+    $data = $this->input->post();
+    $upload_path = './assets/uploads/register/';	
+    $allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
+
+    if (isset($_FILES['photo']) && !empty($_FILES['photo']['name'])) {
+        $photo = upload_file("photo", $upload_path, $allowed_types, time());
+        if ($photo != '') {
+            $data['photo'] = $photo['path'];
+        }
+    }
+
+    $query = $this->Homeservice_model->register_user_model($data);
+    if ($query == true) {
+        $this->session->set_flashdata("web_msg", "User Register Successfully!!");
+        redirect('/');
+    } elseif ($query == false) {
+        $this->session->set_flashdata("web_err_msg", 'Already Mobile number or Email Registered');
+        redirect('/');
+    } else {
+        $this->session->set_flashdata("web_err_msg", $query);
+        redirect('/');
+    }
+}
+
+    public function loginuser(){
+    	$data = $this->input->post();
+    	$query = $this->Homeservice_model->login_user_model($data);
+    
+    	if($query == 1){
+			$this->session->set_flashdata("web_msg","User Login Successfully!!");
+			 redirect('service');	
+		}else{
+			$this->session->set_flashdata("web_err_msg",$query);
+			redirect('login');
+		}
+    }
+    
+    public function userlogout(){
+    	  $this->load->helper('cookie');
+        delete_cookie('login_cookie');
+        delete_cookie('service_customer_id');
+    		redirect('login');
+    }
 
 // 	public function franchise_book()
 // 	{
@@ -456,56 +499,7 @@ class Homeservice extends CI_Controller {
 
 //   }
 
-//     public function registeruser(){
-//     	$data = $this->input->post();
-//       $upload_path = './assets/register/aadhaar/';	
-// 		  $allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
-// 		  if($_FILES['aadhar_card']['name']!=''){	
-// 			  $aadhar_card = upload_file("aadhar_card", $upload_path, $allowed_types, time());
-// 			  if ($aadhar_card !='') {
-// 				  $data['aadhar_card'] = $aadhar_card['path'];
-// 			  }
-// 		  }
-// 		  $upload_path = './assets/register/photo/';
-// 		  $allowed_types = 'gif|jpg|jpeg|png|pdf|GIF|JPG|JPEG|PNG|PDF';
-// 		  if($_FILES['photo']['name']!=''){	
-// 			  $photo = upload_file("photo", $upload_path, $allowed_types, time());
-// 			  if ($photo !='') {
-// 				  $data['photo'] = $photo['path'];
-// 			  }
-// 		  }
-
-// 	    $query = $this->Homeservice_model->register_user_model($data);
-// 	    if($query==true){
-// 			    $this->session->set_flashdata("web_msg","User Register Successfully!!");
-// 			    redirect('login'); 	
-// 		   }elseif ($query == false) {
-// 		   $this->session->set_flashdata("web_err_msg",'Already Mobile number or Email Registered');
-// 			    redirect('register');
-// 		   }else{
-// 			    $this->session->set_flashdata("web_err_msg",$query);
-// 			    redirect('register');
-// 		   }
-//     }
-//     public function loginuser(){
-//     	$data = $this->input->post();
-//     	$query = $this->Homeservice_model->login_user_model($data);
-    
-//     	if($query == 1){
-// 			$this->session->set_flashdata("web_msg","User Login Successfully!!");
-// 			 redirect('service');	
-// 		}else{
-// 			$this->session->set_flashdata("web_err_msg",$query);
-// 			redirect('login');
-// 		}
-//     }
-    
-//     public function userlogout(){
-//     	  $this->load->helper('cookie');
-//         delete_cookie('login_cookie');
-//         delete_cookie('service_customer_id');
-//     		redirect('login');
-//     }
+//     
 //     public function myorder(){
 //        $this->load->helper('cookie');
 //        $login_record = get_cookie('login_cookie');

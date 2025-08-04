@@ -19,6 +19,7 @@ class Homeservice_model extends CI_Model{
      	return false;
      }else{
      	 	$status=$this->db->insert($table,$data);
+			
      	 	$last_id = $this->db->insert_id();
      	 	$query = $this->db->insert('login',array('email'=>$data['email'],'password'=>$data['cpassword'],'register_id'=>$last_id,'salt'=>$data['salt'],'added_on'=>date('Y-m-d H:i:s')));
     if($status == true && $query == true){
