@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Destination Details - Tour Bootstrap Template</title>
+  <title>Upcoming Tours - Tour Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -41,56 +41,39 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Tour</h1>
-      </a>
-
+      
+   <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+  <img 
+    src="assets/img/logo_2-removebg.png" 
+    alt="Holyland Pilgrimage Tours Logo" 
+    class="logo-img"
+  >
+</a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="destinations.html">Destinations</a></li>
+          <!-- <li><a href="destinations.html">Destinations</a></li> -->
           <li><a href="tours.html">Tours</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>More Pages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
+          <li class="dropdown"><a href="#"><span>Our Tour Packages</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="destination-details.html" class="active">Destination Details</a></li>
+              <li><a href="destination-details.html">Upcoming Tours</a></li>
               <li><a href="tour-details.html">Tour Details</a></li>
               <li><a href="booking.html">Booking</a></li>
-              <li><a href="testimonials">Testimonials</a></li>
               <li><a href="faq.html">Frequently Asked Questions</a></li>
-              <li><a href="blog-details.html">Blog Details</a></li>
+              <!-- <li><a href="blog-details.html">Blog Details</a></li> -->
               <li><a href="terms.html">Terms</a></li>
               <li><a href="privacy.html">Privacy</a></li>
-              <li><a href="404.html">404</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <!-- <li><a href="contact.html">Contact</a></li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="destiantios.html">Get Started</a>
+      <a class="btn-getstarted" href="contact.html">Contact</a>
 
     </div>
   </header>
@@ -98,18 +81,31 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/travel/showcase-8.webp);">
-      <div class="container position-relative">
-        <h1>Destination Details</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Destination Details</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+    <!-- Page Title -->
+    <div class="page-title dark-background video-bg" data-aos="fade">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/img/gallery/video_9.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Content -->
+  <div class="container position-relative">
+    <h1>Upcoming Tours</h1>
+    <p>
+     Pray at holy places including Jerusalem, Bethlehem, Nazareth, and Mount Sinai.
+    </p>
+
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current">About</li>
+      </ol>
+    </nav>
+  </div>
+
+</div><!-- End Page Title -->
 
     <!-- Travel Destination Details Section -->
     <section id="travel-destination-details" class="travel-destination-details section">
@@ -117,17 +113,22 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- Hero Section -->
-        <div class="destination-hero" data-aos="fade-up" data-aos-delay="100">
-          <div class="hero-image">
-            <img src="assets/img/travel/destination-3.webp" alt="Santorini" class="img-fluid">
-            <div class="hero-overlay">
-              <div class="hero-content">
-                <h1>Santorini, Greece</h1>
-                <p class="hero-tagline">The Crown Jewel of the Aegean Sea</p>
-              </div>
-            </div>
-          </div>
-        </div>
+       <div class="destination-hero" data-aos="fade-up" data-aos-delay="100">
+  <div class="hero-image">
+    <video class="img-fluid hero-video" autoplay muted loop playsinline>
+      <source src="assets/img/gallery/video_10.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>JORDAN, ISRAEL </h1>
+        <p class="hero-tagline">The Crown Jewel of the Aegean Sea</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <!-- Overview Section -->
         <div class="destination-overview" data-aos="fade-up" data-aos-delay="200">
@@ -227,7 +228,7 @@
                 <div class="tour-image">
                   <img src="assets/img/travel/tour-5.webp" alt="Sunset Cruise" class="img-fluid">
                   <div class="tour-price">
-                    <span>$129</span>
+                    <span>₹129</span>
                   </div>
                 </div>
                 <div class="tour-content">
@@ -237,7 +238,7 @@
                   </div>
                   <h4>Santorini Sunset Cruise</h4>
                   <p>Sail around the caldera while enjoying a magnificent sunset, with dinner and wine included.</p>
-                  <a href="#" class="btn-tour">Book Now</a>
+                  <a href="booking.html" class="btn-tour">Book Now</a>
                 </div>
               </div>
             </div>
@@ -246,7 +247,7 @@
                 <div class="tour-image">
                   <img src="assets/img/travel/tour-12.webp" alt="Wine Tour" class="img-fluid">
                   <div class="tour-price">
-                    <span>$95</span>
+                    <span>₹95</span>
                   </div>
                 </div>
                 <div class="tour-content">
@@ -256,7 +257,7 @@
                   </div>
                   <h4>Wine Tasting &amp; Cultural Tour</h4>
                   <p>Discover the unique terroir of Santorini with visits to traditional wineries and historical sites.</p>
-                  <a href="#" class="btn-tour">Book Now</a>
+                  <a href="booking.html" class="btn-tour">Book Now</a>
                 </div>
               </div>
             </div>
@@ -265,7 +266,7 @@
                 <div class="tour-image">
                   <img src="assets/img/travel/tour-18.webp" alt="Photography Tour" class="img-fluid">
                   <div class="tour-price">
-                    <span>$155</span>
+                    <span>₹155</span>
                   </div>
                 </div>
                 <div class="tour-content">
@@ -275,7 +276,7 @@
                   </div>
                   <h4>Photography Walking Tour</h4>
                   <p>Capture the most photogenic spots of Oia and Fira with a professional photographer guide.</p>
-                  <a href="#" class="btn-tour">Book Now</a>
+                  <a href="booking.html" class="btn-tour">Book Now</a>
                 </div>
               </div>
             </div>
@@ -478,43 +479,45 @@
       </div>
     </div>
 
-    <div class="container footer-top">
+     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="d-flex align-items-center">
             <span class="sitename">Tour</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>H. No. 17, Sector-6, Pocket-1, DDA SFS</p>
+            <p>Dwarka, New Delhi-110075</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>9891318913 & 9810576406</span></p>
+            <p><strong>Email:</strong> <span>ranjittoppo63@gmail.com, jancy.johnson1@outlook.com</span></p>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Quick Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="index.html">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="about.html">About</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tours.html">Tours</a></li>
+             <li><i class="bi bi-chevron-right"></i> <a href="gallery.html">Gallery</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="terms.html">Terms</a></li>
+             <li><i class="bi bi-chevron-right"></i> <a href="privacy.html">Privacy</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="tour-details.html">Tour Details</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="destination-details.html">Upcoming Tours</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="booking.html">Booking</a></li>
+             <li><i class="bi bi-chevron-right"></i> <a href="faq.html">Frequently Asked Question</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12">
           <h4>Follow Us</h4>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
           <div class="social-links d-flex">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
@@ -533,7 +536,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href=>TechSparrow</a>
       </div>
     </div>
 

@@ -69,7 +69,7 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: #06057b;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading-color);
+  color:#06057b;
   font-family: var(--heading-font);
 }
 
@@ -161,15 +161,22 @@ h6 {
   border-radius: 50px;
   padding: 5px 25px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+ 
 }
-
+.header.scrolled .header-container {
+  background: #000;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+}
 .header .logo {
   line-height: 1;
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 75px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  background: none;   /* important */
 }
 
 .header .logo h1 {
@@ -180,11 +187,10 @@ h6 {
   text-transform: uppercase;
   color: var(--heading-color);
 }
-
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
-  background: var(--accent-color);
+  background-color: #06057b;
   font-size: 14px;
   padding: 8px 20px;
   margin: 0 0 0 30px;
@@ -409,12 +415,12 @@ h6 {
   .navmenu a:hover,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-dropdown-hover-color);
+    color: #06057b;
   }
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--accent-color);
+    background-color: #06057b;
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
@@ -521,7 +527,7 @@ h6 {
   font-size: 16px;
   padding: 0 20px;
   margin: -7px -8px -7px 0;
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   transition: 0.3s;
   border-radius: 50px;
@@ -575,7 +581,7 @@ h6 {
   margin-right: 3px;
   font-size: 12px;
   line-height: 0;
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .footer .footer-links ul li {
@@ -668,7 +674,7 @@ h6 {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background-color: var(--accent-color);
+  background-color: #06057b;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -785,8 +791,8 @@ section,
   font-weight: 700;
   padding: 8px 20px;
   margin: 0;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
+  background: color-mix(in srgb, #06057b, transparent 90%);
+  color: #06057b;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -802,7 +808,7 @@ section,
 }
 
 .section-title div .description-title {
-  color: var(--accent-color);
+  color:#06057b;
 }
 
 /*--------------------------------------------------------------
@@ -866,7 +872,7 @@ section,
 }
 
 .travel-hero .hero-text .hero-buttons .btn.btn-primary {
-  background-color: var(--accent-color);
+  background-color: #06057b;
   border-color: var(--accent-color);
   color: var(--contrast-color);
 }
@@ -937,7 +943,7 @@ section,
 }
 
 .travel-hero .booking-form-wrapper .booking-form .btn-primary {
-  background-color: var(--accent-color);
+  background-color: #06057b;
   border-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 12px 20px;
@@ -1028,7 +1034,7 @@ section,
 .why-us .stat-item span {
   font-size: 2.5rem;
   font-weight: 700;
-  color: var(--accent-color);
+  color: #06057b;
   font-family: var(--heading-font);
 }
 
@@ -1046,7 +1052,7 @@ section,
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   padding: 1.5rem;
   border-radius: 15px;
@@ -1136,8 +1142,8 @@ section,
 .why-us .feature-icon {
   width: 80px;
   height: 80px;
-  background: color-mix(in srgb, var(--accent-color), transparent 85%);
-  color: var(--accent-color);
+  background: color-mix(in srgb, #06057b, transparent 85%);
+  color: #06057b;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1234,7 +1240,7 @@ section,
 
 .featured-destinations .featured-destination .destination-info .destination-tag {
   display: inline-block;
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   padding: 8px 16px;
   border-radius: 25px;
@@ -1263,7 +1269,7 @@ section,
 }
 
 .featured-destinations .featured-destination .destination-info .location i {
-  color: var(--accent-color);
+  color: #06057b;
   font-size: 18px;
 }
 
@@ -1290,7 +1296,7 @@ section,
 
 .featured-destinations .featured-destination .destination-info .destination-meta .tours-count i,
 .featured-destinations .featured-destination .destination-info .destination-meta .rating i {
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .featured-destinations .featured-destination .destination-info .price-info {
@@ -1309,7 +1315,7 @@ section,
 .featured-destinations .featured-destination .destination-info .price-info .amount {
   font-size: 28px;
   font-weight: 800;
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .featured-destinations .featured-destination .destination-info .explore-btn {
@@ -1417,7 +1423,7 @@ section,
 }
 
 .featured-destinations .compact-destination .destination-details .location i {
-  color: var(--accent-color);
+  color: #06057b;
   font-size: 12px;
 }
 
@@ -1426,9 +1432,9 @@ section,
   line-height: 1.4;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 12px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
+ display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   overflow: hidden;
 }
 
@@ -1450,7 +1456,7 @@ section,
 
 .featured-destinations .compact-destination .destination-details .stats-row .tour-count i,
 .featured-destinations .compact-destination .destination-details .stats-row .rating i {
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .featured-destinations .compact-destination .destination-details .stats-row .rating i {
@@ -1459,12 +1465,12 @@ section,
 
 .featured-destinations .compact-destination .destination-details .stats-row .price {
   font-weight: 700;
-  color: var(--accent-color);
+  color: #06057b;
   font-size: 14px;
 }
 
 .featured-destinations .compact-destination .destination-details .quick-link {
-  color: var(--accent-color);
+  color: #06057b;
   text-decoration: none;
   font-size: 13px;
   font-weight: 600;
@@ -1513,7 +1519,9 @@ section,
   }
 
   .featured-destinations .featured-destination .destination-info {
-    padding: 25px;
+    padding: 30px;
+     position: relative;
+      z-index: 2;
   }
 
   .featured-destinations .featured-destination .destination-info h3 {
@@ -1582,7 +1590,7 @@ section,
   position: absolute;
   top: 15px;
   left: 15px;
-  background-color: var(--accent-color);
+  background-color: #06057b;
   color: var(--contrast-color);
   padding: 5px 12px;
   border-radius: 20px;
@@ -1655,7 +1663,7 @@ section,
 }
 
 .featured-tours .tour-card .tour-content .tour-meta span i {
-  color: var(--accent-color);
+  color:#06057b;
 }
 
 .featured-tours .tour-card .tour-content p {
@@ -1674,8 +1682,8 @@ section,
 }
 
 .featured-tours .tour-card .tour-content .tour-highlights span {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
+  background-color: color-mix(in srgb, #06057b, transparent 90%);
+  color: #06057b;
   padding: 4px 10px;
   border-radius: 15px;
   font-size: 12px;
@@ -1690,7 +1698,7 @@ section,
 }
 
 .featured-tours .tour-card .tour-content .tour-action .btn-book {
-  background-color: var(--accent-color);
+  background-color:#06057b;
   color: var(--contrast-color);
   padding: 12px 25px;
   border-radius: 6px;
@@ -1726,8 +1734,8 @@ section,
 
 .featured-tours .btn-view-all {
   background-color: transparent;
-  color: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  color: #06057b;
+  border: 2px solid #06057b;
   padding: 15px 35px;
   border-radius: 8px;
   font-weight: 600;
@@ -1821,7 +1829,7 @@ section,
 
 .testimonials-home .testimonial-item .quote-icon-left,
 .testimonials-home .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 40%);
+  color: color-mix(in srgb, #06057b, transparent 40%);
   font-size: 26px;
   line-height: 0;
 }
@@ -1908,7 +1916,7 @@ section,
 
 .call-to-action .content-wrapper .badge-wrapper .promo-badge {
   display: inline-block;
-  background: linear-gradient(45deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
+  background: linear-gradient(45deg, #06057b, color-mix(in srgb, var(--accent-color), black 20%));
   color: var(--contrast-color);
   padding: 8px 20px;
   border-radius: 25px;
@@ -1998,7 +2006,7 @@ section,
 }
 
 .call-to-action .action-section .main-actions .btn.btn-explore {
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
+  background: linear-gradient(135deg, #06057b, color-mix(in srgb, var(--accent-color), black 20%));
   border: none;
   color: var(--contrast-color);
 }
@@ -2010,8 +2018,8 @@ section,
 
 .call-to-action .action-section .main-actions .btn.btn-deals {
   background: transparent;
-  border: 3px solid var(--accent-color);
-  color: var(--accent-color);
+  border: 3px solid #06057b;
+  color: #06057b;
 }
 
 .call-to-action .action-section .main-actions .btn.btn-deals:hover {
@@ -2025,9 +2033,9 @@ section,
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: color-mix(in srgb, var(--surface-color), transparent 50%);
+  background: color-mix(in srgb, #06057b, transparent 50%);
   border-radius: 15px;
-  border-left: 4px solid var(--accent-color);
+  border-left: 4px solid #06057b;
 }
 
 @media (max-width: 576px) {
@@ -2048,7 +2056,7 @@ section,
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--accent-color);
+  color: #06057b;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -2102,12 +2110,12 @@ section,
   display: block;
   font-size: 2rem;
   font-weight: 800;
-  color: var(--contrast-color);
+  color: #06057b;
 }
 
 .call-to-action .visual-element .image-overlay .stat-item .stat-label {
   font-size: 0.9rem;
-  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
+  color: color-mix(in srgb, #06057b, transparent 20%);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -2146,7 +2154,7 @@ section,
 .call-to-action .newsletter-section .newsletter-content .newsletter-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
+  background: linear-gradient(135deg, #06057b, color-mix(in srgb, var(--accent-color), black 20%));
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -2156,7 +2164,7 @@ section,
 
 .call-to-action .newsletter-section .newsletter-content .newsletter-icon i {
   font-size: 2rem;
-  color: var(--contrast-color);
+  color: #ffffff;
 }
 
 .call-to-action .newsletter-section .newsletter-content .newsletter-text h3 {
@@ -2214,7 +2222,7 @@ section,
 
 .call-to-action .newsletter-section .newsletter-form .form-wrapper .subscribe-btn {
   padding: 18px 25px;
-  background: var(--accent-color);
+  background: #06057b;
   border: 2px solid var(--accent-color);
   border-radius: 0 60px 60px 0;
   color: var(--contrast-color);
@@ -2249,7 +2257,7 @@ section,
 }
 
 .call-to-action .newsletter-section .newsletter-form .trust-indicators i {
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .call-to-action .benefits-showcase .benefits-header {
@@ -2300,7 +2308,7 @@ section,
 .call-to-action .benefits-showcase .benefit-card .benefit-visual .benefit-icon-wrap {
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
+  background: linear-gradient(135deg, #06057b, color-mix(in srgb, var(--accent-color), black 20%));
   border-radius: 25px;
   display: flex;
   align-items: center;
@@ -2439,7 +2447,7 @@ section,
   display: block;
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--accent-color);
+  color: #06057b;
   line-height: 1;
 }
 
@@ -2461,8 +2469,8 @@ section,
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
+  background: color-mix(in srgb, #06057b, transparent 90%);
+  color:#06057b;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-weight: 600;
@@ -2503,14 +2511,14 @@ section,
   padding: 2rem;
   border-radius: 15px;
   margin-top: 2rem;
-  border-left: 5px solid var(--accent-color);
+  border-left: 5px solid #06057b;
   box-shadow: 0 5px 20px color-mix(in srgb, var(--default-color), transparent 92%);
 }
 
 .travel-about .story-content .mission-box .mission-icon {
   width: 60px;
   height: 60px;
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   border-radius: 50%;
   display: flex;
@@ -2583,8 +2591,8 @@ section,
 .travel-about .features-grid .feature-card .feature-front .feature-icon {
   width: 80px;
   height: 80px;
-  background: color-mix(in srgb, var(--accent-color), transparent 85%);
-  color: var(--accent-color);
+  background: color-mix(in srgb, #06057b, transparent 85%);
+  color: #06057b;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -2670,7 +2678,7 @@ section,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   width: 100px;
   height: 100px;
@@ -2744,7 +2752,7 @@ section,
 }
 
 .travel-about .cta-banner .cta-overlay {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: color-mix(in srgb, #06057b, transparent 20%);
   position: absolute;
   top: 0;
   left: 0;
@@ -2805,7 +2813,7 @@ section,
 
 .travel-about .cta-banner .cta-content .cta-buttons .btn.btn-primary {
   background: var(--contrast-color);
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .travel-about .cta-banner .cta-content .cta-buttons .btn.btn-primary:hover {
@@ -2860,7 +2868,7 @@ section,
 
 .travel-destinations .destination-filters li:hover,
 .travel-destinations .destination-filters li.filter-active {
-  background-color: var(--accent-color);
+  background-color: #06057b;
   border-color: var(--accent-color);
   color: var(--contrast-color);
 }
@@ -3024,7 +3032,7 @@ section,
 .travel-destinations .isotope-container .destination-tile .tile-image .overlay-content .destination-info .destination-stats .starting-price {
   font-size: 18px;
   font-weight: 700;
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .travel-destinations .planning-assistance {
@@ -3105,7 +3113,7 @@ section,
 }
 
 .travel-destinations .planning-assistance .assistance-content .assistance-actions .btn.btn-primary {
-  background-color: var(--accent-color);
+  background-color: #06057b;
   border: 2px solid var(--accent-color);
   color: var(--contrast-color);
 }
@@ -3119,8 +3127,8 @@ section,
 
 .travel-destinations .planning-assistance .assistance-content .assistance-actions .btn.btn-outline {
   background-color: transparent;
-  border: 2px solid var(--accent-color);
-  color: var(--accent-color);
+  border: 2px solid #06057b;
+  color: #06057b;
 }
 
 .travel-destinations .planning-assistance .assistance-content .assistance-actions .btn.btn-outline:hover {
@@ -3326,7 +3334,7 @@ section,
   position: absolute;
   top: 15px;
   right: 15px;
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   padding: 8px 15px;
   border-radius: 20px;
@@ -3354,7 +3362,7 @@ section,
 }
 
 .travel-destination-details .tours-section .tour-card .tour-content .tour-meta span i {
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .travel-destination-details .tours-section .tour-card .tour-content .tour-meta span.rating {
@@ -3379,7 +3387,7 @@ section,
 }
 
 .travel-destination-details .tours-section .tour-card .tour-content .btn-tour {
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   padding: 10px 25px;
   border-radius: 25px;
@@ -3449,11 +3457,11 @@ section,
   gap: 10px;
   padding: 10px;
   border-radius: 8px;
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background: color-mix(in srgb, #06057b, transparent 95%);
 }
 
 .travel-destination-details .map-section .map-container .map-points .point-item i {
-  color: var(--accent-color);
+  color: #06057b;
   font-size: 1.2rem;
 }
 
@@ -3500,7 +3508,7 @@ section,
 .travel-destination-details .practical-info .info-item .info-icon {
   width: 70px;
   height: 70px;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background: color-mix(in srgb, #06057b, transparent 90%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -3510,7 +3518,7 @@ section,
 
 .travel-destination-details .practical-info .info-item .info-icon i {
   font-size: 2rem;
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .travel-destination-details .practical-info .info-item h4 {
@@ -3555,7 +3563,7 @@ section,
 }
 
 .travel-destination-details .practical-info .travel-tips .tips-list li i {
-  color: var(--accent-color);
+  color: #06057b;
   margin-top: 3px;
   font-size: 1.1rem;
 }
@@ -3607,7 +3615,7 @@ section,
 }
 
 .travel-destination-details .gallery-section .swiper-pagination .swiper-pagination-bullet {
-  background: var(--accent-color);
+  background: #06057b;
   opacity: 0.5;
   width: 12px;
   height: 12px;
@@ -3619,7 +3627,7 @@ section,
 
 .travel-destination-details .cta-section {
   padding: 60px 40px;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
+  background: linear-gradient(135deg, #06057b, color-mix(in srgb, var(--accent-color), black 20%));
   border-radius: 20px;
   text-align: center;
 }
@@ -3660,7 +3668,7 @@ section,
 
 .travel-destination-details .cta-section .cta-buttons .btn.btn-primary {
   background: var(--contrast-color);
-  color: var(--accent-color);
+  color: #06057b;
   border: 2px solid var(--contrast-color);
 }
 
@@ -3754,7 +3762,7 @@ section,
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background-color: var(--accent-color);
+  background-color: #06057b;
   color: var(--contrast-color);
   padding: 0.5rem 1rem;
   border-radius: 25px;
@@ -3795,12 +3803,12 @@ section,
 }
 
 .travel-tours .featured-tour-card .tour-content .tour-meta .duration i {
-  color: var(--accent-color);
+  color: #06057b;
   margin-right: 0.5rem;
 }
 
 .travel-tours .featured-tour-card .tour-content .tour-meta .price {
-  color: var(--accent-color);
+  color: #06057b;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -3829,7 +3837,7 @@ section,
 
 .travel-tours .category-card .category-icon i {
   font-size: 2.5rem;
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .travel-tours .category-card h5 {
@@ -3841,7 +3849,7 @@ section,
 
 .travel-tours .special-offers .offer-banner {
   display: flex;
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #000 20%));
+  background: linear-gradient(135deg, #06057b, color-mix(in srgb, var(--accent-color), #000 20%));
   border-radius: 15px;
   overflow: hidden;
   min-height: 200px;
@@ -3865,7 +3873,7 @@ section,
 
 .travel-tours .special-offers .offer-banner .offer-content .discount-badge {
   display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color:#06057b;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   font-weight: 700;
@@ -3893,7 +3901,7 @@ section,
 
 .travel-tours .special-offers .offer-banner .offer-content .btn-accent {
   background-color: var(--contrast-color);
-  color: var(--accent-color);
+  color: #06057b;
   border: none;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -3955,7 +3963,7 @@ section,
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  background-color: var(--accent-color);
+  background-color: #06057b;
   color: var(--contrast-color);
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -4002,7 +4010,7 @@ section,
 }
 
 .travel-tours .tour-card .tour-content .tour-details span i {
-  color: var(--accent-color);
+  color: #06057b;
   margin-right: 0.5rem;
 }
 
@@ -4045,7 +4053,7 @@ section,
 }
 
 .travel-tours .btn-primary {
-  background-color: var(--accent-color);
+  background-color: #06057b;
   border-color: var(--accent-color);
   color: var(--contrast-color);
   padding: 0.75rem 1.5rem;
@@ -4061,8 +4069,8 @@ section,
 }
 
 .travel-tours .btn-outline-primary {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #06057b;
+  border-color: #06057b;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: 600;
@@ -4151,7 +4159,7 @@ section,
 
 .travel-tour-details .tour-hero .hero-content .hero-meta span i {
   font-size: 1.1rem;
-  color: var(--accent-color);
+  color:#06057b;
 }
 
 .travel-tour-details .tour-hero .hero-content .hero-tagline {
@@ -4167,7 +4175,7 @@ section,
 }
 
 .travel-tour-details .tour-hero .hero-content .btn-book {
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   padding: 12px 30px;
   border-radius: 25px;
@@ -4227,7 +4235,7 @@ section,
 }
 
 .travel-tour-details .tour-overview .tour-highlights ul li i {
-  color: var(--accent-color);
+  color: #06057b;
   font-size: 1.1rem;
 }
 
@@ -4280,7 +4288,7 @@ section,
   top: 0;
   width: 80px;
   height: 80px;
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   border-radius: 50%;
   display: flex;
@@ -4332,7 +4340,7 @@ section,
 }
 
 .travel-tour-details .tour-itinerary .itinerary-item .day-content .day-details span i {
-  color: var(--accent-color);
+  color:#06057b;
 }
 
 .travel-tour-details .tour-inclusions {
@@ -4437,7 +4445,7 @@ section,
 .travel-tour-details .tour-pricing .pricing-header .price-item .price-amount {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--accent-color);
+  color:#06057b;
   margin-bottom: 5px;
 }
 
@@ -4459,7 +4467,7 @@ section,
   text-align: center;
   padding: 20px;
   border-radius: 15px;
-  background: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background: color-mix(in srgb, #06057b, transparent 95%);
 }
 
 .travel-tour-details .tour-pricing .pricing-details .price-type h4 {
@@ -4471,7 +4479,7 @@ section,
 .travel-tour-details .tour-pricing .pricing-details .price-type .price {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--accent-color);
+  color: #06057b;
   margin-bottom: 5px;
 }
 
@@ -4496,7 +4504,7 @@ section,
 .travel-tour-details .tour-pricing .available-dates .date-option {
   text-align: center;
   padding: 20px;
-  border: 2px solid color-mix(in srgb, var(--accent-color), transparent 80%);
+  border: 2px solid color-mix(in srgb, #06057b, transparent 80%);
   border-radius: 15px;
   transition: all 0.3s ease;
 }
@@ -4576,7 +4584,7 @@ section,
 
 .travel-tour-details .booking-section .booking-card .btn-submit {
   width: 100%;
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   padding: 15px;
   border: none;
@@ -4631,7 +4639,7 @@ section,
 }
 
 .travel-tour-details .final-cta .cta-content {
-  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), black 20%));
+  background: linear-gradient(135deg, #06057b, color-mix(in srgb, var(--accent-color), black 20%));
   color: var(--contrast-color);
   padding: 60px 40px;
   border-radius: 20px;
@@ -4682,7 +4690,7 @@ section,
 
 .travel-tour-details .final-cta .cta-content .cta-actions .btn-primary {
   background: var(--contrast-color);
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .travel-tour-details .final-cta .cta-content .cta-actions .btn-primary:hover {
@@ -4791,12 +4799,12 @@ section,
 }
 
 .travel-booking .booking-progress .step.active .step-number {
-  background-color: var(--accent-color);
+  background-color: #06057b;
   color: var(--contrast-color);
 }
 
 .travel-booking .booking-progress .step.active .step-title {
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .travel-booking .booking-progress .step.completed .step-number {
@@ -5115,7 +5123,7 @@ section,
 }
 
 .travel-booking .booking-summary .selected-tour .tour-info p i {
-  color: var(--accent-color);
+  color: #06057b;
   margin-right: 8px;
 }
 
@@ -5170,7 +5178,7 @@ section,
   justify-content: space-between;
   margin-top: 15px;
   padding-top: 15px;
-  border-top: 2px solid var(--accent-color);
+  border-top: 2px solid #06057b;
 }
 
 .travel-booking .booking-summary .price-breakdown .price-total .description {
@@ -5182,7 +5190,7 @@ section,
 .travel-booking .booking-summary .price-breakdown .price-total .amount {
   font-weight: 600;
   font-size: 24px;
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .travel-booking .booking-summary .help-section {
@@ -5209,7 +5217,7 @@ section,
 }
 
 .travel-booking .booking-summary .help-section .contact-info p i {
-  color: var(--accent-color);
+  color: #06057b;
   margin-right: 8px;
   width: 16px;
 }
@@ -5334,13 +5342,13 @@ section,
   width: 12px;
   height: 12px;
   background: transparent;
-  border: 2px solid var(--accent-color);
+  border: 2px solid #06057b;
   opacity: 0.7;
   transition: all 0.3s ease;
 }
 
 .gallery-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background: var(--accent-color);
+  background: #06057b;
   opacity: 1;
   transform: scale(1.2);
 }
@@ -5422,11 +5430,11 @@ section,
 }
 
 .gallery .isotope-filters li:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 80%);
+  background: color-mix(in srgb, #06057b, transparent 80%);
 }
 
 .gallery .isotope-filters li.filter-active {
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
@@ -5596,7 +5604,7 @@ section,
   right: 0;
   padding: 2rem;
   background: linear-gradient(0deg, color-mix(in srgb, black, transparent 25%) 0%, transparent 100%);
-  transition: background 0.3s ease;
+  transition: #06057b 0.3s ease;
 }
 
 .blog-hero .main-feature {
@@ -5818,7 +5826,7 @@ section,
 
 .pagination-2 li a.active,
 .pagination-2 li a:hover {
-  background: var(--accent-color);
+  background: #06057b;
   color: var(--contrast-color);
 }
 
@@ -7305,7 +7313,7 @@ section,
 }
 
 .faq .faq-sidebar .contact-box {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: color-mix(in srgb, #06057b, transparent 90%);
   border-radius: 14px;
   padding: 30px;
 }
@@ -7321,7 +7329,7 @@ section,
 
 .faq .faq-sidebar .contact-box h3 i {
   font-size: 24px;
-  color: var(--accent-color);
+  color:#06057b;
 }
 
 .faq .faq-sidebar .contact-box p {
@@ -7332,7 +7340,7 @@ section,
 
 .faq .faq-sidebar .contact-box .btn-contact {
   display: inline-block;
-  background-color: var(--accent-color);
+  background-color: #06057b;
   color: var(--contrast-color);
   padding: 10px 24px;
   border-radius: 50px;
@@ -7343,7 +7351,7 @@ section,
 .faq .faq-sidebar .contact-box .btn-contact:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 5px 15px color-mix(in srgb, #06057b, transparent 70%);
 }
 
 .faq .faq-tabs .nav-pills {
@@ -7354,7 +7362,7 @@ section,
 
 .faq .faq-tabs .nav-pills .nav-link {
   background: transparent;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, #06057b, transparent 30%);
   border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
@@ -7363,9 +7371,9 @@ section,
 }
 
 .faq .faq-tabs .nav-pills .nav-link.active {
-  background-color: var(--accent-color);
+  background-color:#06057b;
   color: var(--contrast-color);
-  box-shadow: 0 3px 10px color-mix(in srgb, var(--accent-color), transparent 70%);
+  box-shadow: 0 3px 10px color-mix(in srgb, #06057b, transparent 70%);
 }
 
 .faq .faq-tabs .nav-pills .nav-link:hover:not(.active) {
@@ -7415,7 +7423,7 @@ section,
   font-size: 15px;
   line-height: 1.6;
   overflow: hidden;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, #06057b, transparent 20%);
 }
 
 .faq .faq-item .faq-toggle {
@@ -7423,16 +7431,16 @@ section,
   right: 25px;
   top: 25px;
   font-size: 18px;
-  color: var(--accent-color);
+  color: #06057b;
   transition: transform 0.3s ease;
 }
 
 .faq .faq-item.faq-active {
-  background-color: color-mix(in srgb, var(--surface-color), var(--accent-color) 3%);
+  background-color: color-mix(in srgb, var(--surface-color), #06057b 3%);
 }
 
 .faq .faq-item.faq-active h3 {
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .faq .faq-item.faq-active .faq-content {
@@ -7510,8 +7518,8 @@ section,
 }
 
 .contact .contact-info-box .icon-box {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--accent-color);
+  background-color: color-mix(in srgb, #06057b, transparent 90%);
+  color: #06057b;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -7585,7 +7593,7 @@ section,
   transform: translateX(-50%);
   width: 50px;
   height: 3px;
-  background-color: var(--accent-color);
+  background-color: #06057b;
 }
 
 .contact .contact-form-wrapper .form-group {
@@ -7641,7 +7649,7 @@ section,
 }
 
 .contact .contact-form-wrapper .btn-submit {
-  background-color: var(--accent-color);
+  background-color: #06057b;
   border: none;
   color: var(--contrast-color);
   padding: 12px 30px;
@@ -7731,9 +7739,9 @@ section,
 .terms-of-service .tos-header .last-updated {
   display: inline-block;
   padding: 8px 20px;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+  background-color: color-mix(in srgb, #06057b, transparent 90%);
   border-radius: 30px;
-  color: var(--accent-color);
+  color: #06057b;
   font-size: 0.95rem;
   margin-bottom: 20px;
 }
@@ -7780,14 +7788,14 @@ section,
   align-items: flex-start;
   gap: 15px;
   padding: 20px;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background-color: color-mix(in srgb, #06057b, transparent 95%);
   border-radius: 15px;
   margin-top: 20px;
 }
 
 .terms-of-service .tos-content .content-section .info-box i {
   font-size: 1.5rem;
-  color: var(--accent-color);
+  color: #06057b;
   flex-shrink: 0;
 }
 
@@ -7821,7 +7829,7 @@ section,
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--accent-color);
+  background-color: #06057b;
 }
 
 .terms-of-service .tos-content .content-section .alert-box {
@@ -7830,13 +7838,13 @@ section,
   padding: 25px;
   background-color: var(--surface-color);
   border-radius: 15px;
-  border-left: 4px solid var(--accent-color);
+  border-left: 4px solid #06057b;
   margin-top: 20px;
 }
 
 .terms-of-service .tos-content .content-section .alert-box i {
   font-size: 2rem;
-  color: var(--accent-color);
+  color: #06057b;
   flex-shrink: 0;
 }
 
@@ -7916,7 +7924,7 @@ section,
   content: "•";
   position: absolute;
   left: 8px;
-  color: var(--accent-color);
+  color: #06057b;
 }
 
 .terms-of-service .tos-content .content-section .notice-box {
@@ -7924,14 +7932,14 @@ section,
   align-items: center;
   gap: 15px;
   padding: 20px;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  background-color: color-mix(in srgb, #06057b, transparent 95%);
   border-radius: 15px;
   margin-top: 20px;
 }
 
 .terms-of-service .tos-content .content-section .notice-box i {
   font-size: 1.5rem;
-  color: var(--accent-color);
+  color: #06057b;
   flex-shrink: 0;
 }
 
@@ -7945,7 +7953,7 @@ section,
 }
 
 .terms-of-service .tos-contact .contact-box {
-  background: linear-gradient(135deg, color-mix(in srgb, var(--accent-color), transparent 95%) 0%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
+  background: linear-gradient(135deg, color-mix(in srgb, #06057b, transparent 95%) 0%, color-mix(in srgb, var(--accent-color), transparent 98%) 100%);
   border-radius: 20px;
   padding: 40px;
   display: flex;
@@ -7963,7 +7971,7 @@ section,
 .terms-of-service .tos-contact .contact-box .contact-icon {
   width: 60px;
   height: 60px;
-  background-color: var(--accent-color);
+  background-color: #06057b;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -7995,7 +8003,7 @@ section,
   align-items: center;
   gap: 8px;
   padding: 12px 25px;
-  background-color: var(--accent-color);
+  background-color: #06057b;
   color: var(--contrast-color);
   border-radius: 30px;
   text-decoration: none;
@@ -8468,6 +8476,148 @@ section,
   .error-404 .error-actions .btn-help {
     width: 100%;
     justify-content: center;
+  }
+}
+/* Make overlay fill the card */
+.featured-destination .destination-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+/* Force video to behave like background image */
+.featured-destination .destination-overlay video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.square-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;   /* ✅ makes it square */
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.square-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* fills square without distortion */
+}
+.video-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+.video-bg .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Optional dark overlay for text readability */
+.video-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+.hero-image {
+  position: relative;
+  overflow: visible; /* 🔥 important */
+}
+
+/* image / video */
+.hero-image img,
+.hero-image video {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+/* floating stats */
+.floating-stats {
+  position: absolute;
+  bottom: -25px; /* pull outside image */
+  left: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 999; /* 🔥 VERY IMPORTANT */
+}
+
+/* stat card */
+.stat-item {
+  background: #ffffff;
+  padding: 14px 18px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stat-item .number {
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+}
+
+.stat-item .label {
+  font-size: 13px;
+  color: #555;
+}
+.destination-hero {
+  width: 100%;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 450px; /* desktop height */
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Video behaves like background */
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 280px;   /* adjust for mobile */
   }
 }
 
